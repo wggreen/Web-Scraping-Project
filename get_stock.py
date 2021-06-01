@@ -697,8 +697,8 @@ def main():
     def email():
         port = 465  # For SSL
         smtp_server = "smtp.gmail.com"
-        sender_email = "tbnashstock@gmail.com"  # Enter your address
-        receiver_email = "jordan@twoboots.com"  # Enter receiver address
+        sender_email = "TKTKTK"  # Enter your address
+        receiver_email = "TKTKTK"  # Enter receiver address
         password = "TKTKTK"
         message = contents
 
