@@ -699,7 +699,7 @@ def main():
         smtp_server = "smtp.gmail.com"
         sender_email = "tbnashstock@gmail.com"  # Enter your address
         receiver_email = "jordan@twoboots.com"  # Enter receiver address
-        password = "Olemiss123"
+        password = "TKTKTK"
         message = contents
 
         context = ssl.create_default_context()
