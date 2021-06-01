@@ -17,5 +17,5 @@ This script uses the [Selenium](https://selenium-python.readthedocs.io/) automat
 2. Uses combination of XPath and CSS selectors to scrape list of item IDs for later requests (weekly)
 3. Logs in to Toast with manager credentials using Selenium
 4. Saves cookies from session for use in requests (daily)
-6. Uses saved cookies and scraped IDs to query backend for item inventory status
+6. Uses saved cookies, scraped IDs, and Requests to query backend for item inventory status
 7. Writes names of out of stock items to text file
