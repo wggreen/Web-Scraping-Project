@@ -13,8 +13,9 @@ Ever since I started at Nashville Software School in 2019, I knew I wanted to us
 This script uses the [Selenium](https://selenium-python.readthedocs.io/) automation package.
 
 ## Process
-1. Logs in to Toast with manager credentials
-2. Clicks through dropdown to select correct restaurant instance
-3. Navigates to full menu listing page
-4. Uses combination of XPath and CSS selectors to expand menu categories one by one and extract titles of items listed as out of stock
-5. Writes names of out of stock items to text file
+1. Logs in to Toast with manager credentials using Selenium
+2. Uses combination of XPath and CSS selectors to scrape list of item IDs for later requests (weekly)
+3. Logs in to Toast with manager credentials using Selenium
+4. Saves cookies from session for use in requests (daily)
+6. Uses saved cookies and scraped IDs to query backend for item inventory status
+7. Writes names of out of stock items to text file
