@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 import subprocess
 import smtplib, ssl
+from logins import *
 
 driver = webdriver.Chrome(executable_path='C:/Webdrivers/chromedriver.exe')
 
@@ -15,9 +16,9 @@ driver.maximize_window()
 
 driver.implicitly_wait(5)
 email = driver.find_element_by_name('username')
-password = driver.find_element_by_name('password')
-email.send_keys("TKTKTK")
-password.send_keys("TKTKTK")
+password_element = driver.find_element_by_name('password')
+email.send_keys(username)
+password_element.send_keys(password)
 submit = driver.find_element_by_name('action').click()
 
 driver.implicitly_wait(5)
@@ -58,7 +59,6 @@ def smalls():
         small_whole_ids_doc.close()
 
         small_whole_ids_doc = open("small_whole_ids.txt", 'r')
-        print(small_whole_ids_doc.readlines())
         small_whole_ids_doc.close()
 
     small_whole_toppings()
