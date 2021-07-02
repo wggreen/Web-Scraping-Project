@@ -10,7 +10,7 @@ Ever since I started at Nashville Software School in 2019, I knew I wanted to us
 
 
 
-This script uses the [Selenium](https://selenium-python.readthedocs.io/) automation package.
+This script uses the [Selenium](https://selenium-python.readthedocs.io/) automation package and the [Requests](https://docs.python-requests.org/en/master/) package.
 
 ## Process
 1. Logs in to Toast with manager credentials using Selenium
